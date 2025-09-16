@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mini Keep Notes</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <div class="header">
+      <h1>🗒️ My Keep Notes</h1>
+      <input type="text" id="searchInput" placeholder="Search notes..." />
+
+    </div>
+    
+
+    <div class="note-input">
+      <input type="text" id="noteTitle" placeholder="Title" />
+      <textarea id="noteContent" placeholder="Take a note..."></textarea>
+      <input type="color" id="noteColor" value="#ffffff" title="Pick note color" />
+
+      <button id="addNoteBtn">Add Note</button>
+    </div>
+
+
+    <div id="notesContainer" class="notes-container"></div>
+  </div>
+  
+
+  <script src="script.js"></script>
+</body>
+</html>

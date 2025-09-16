@@ -1,0 +1,157 @@
+body {
+    font-family: sans-serif;
+    background-color: #f1f3f4;
+    margin: 0;
+    padding: 20px;
+    
+  }
+  
+.app {
+    max-width: 800px;
+    margin: auto;
+  }
+
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #202124;
+}
+.note-input{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: #fff;
+    padding: 15px;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+#noteTitle,
+#noteContent{
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    border: none;
+    outline: none;
+    background: f8f9fa;
+}
+#addNoteBtn{
+    padding: 10px;
+    font-size: 16px;
+    background-color: #fbbc04;
+    border: none;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+
+    cursor: pointer;
+    color:#202124 ;
+    font-weight: bold;
+
+}
+
+#notesContainer {
+  column-count: 3;
+  column-gap: 16px;
+  padding: 1rem;
+}
+
+@media (max-width: 768px) {
+  #notesContainer {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 480px) {
+  #notesContainer {
+    column-count: 1;
+  }
+}
+
+.note-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 1rem;
+  margin-bottom: 16px;
+  break-inside: avoid; /* ⬅️ Important to prevent notes from breaking weirdly */
+  transition: transform 0.2s;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.note-card:hover {
+  transform: scale(1.02);
+}
+
+.note-card h3{
+    margin: 0 0 10px 0;
+    font-size: 18px;
+    color: #202124;
+    
+}
+
+.note-card p {
+    font-size: 14px;
+    color: #5f6368;
+    transition: background-color 0.3s ease;
+    -webkit-transition: background-color 0.3s ease;
+    -moz-transition: background-color 0.3s ease;
+    -ms-transition: background-color 0.3s ease;
+    -o-transition: background-color 0.3s ease;
+}
+
+.delete-btn{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    color: #d93025 ;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    gap: 10px;
+  }
+  
+  .header h1 {
+    font-size: 1.8rem;
+    margin: 0;
+  }
+  
+  #searchInput {
+    padding: 8px 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    flex: 1;
+    max-width: 250px;
+  }
+  
+  .timestamp {
+    font-size: 0.75rem;
+    color: #555;
+    display: block;
+    margin-top: 6px;
+  }
+ 
+  
+  
